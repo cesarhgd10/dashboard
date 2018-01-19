@@ -1,0 +1,37 @@
+.content {
+  .page-navigation {
+    .navigation {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+      .nav-item {
+        //float:left;
+        *zoom:1;
+        position:relative;
+        width: 32%;
+        
+
+        a {
+          display: block;
+          text-decoration:none;
+          padding: 16px 4px;
+          transform: skew(-10deg);
+          color:#fff;
+          background-color: $brand-primary;
+          text-align: center;
+
+          span {
+            display: inline-block;
+            transform: skew(10deg);
+          }
+        }
+
+        &.active {
+          background-color: darken($brand-primary, 5%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.sidebar {
+  background-color: $brand-primary;
+  width: 30%;
+
+  .navigation {
+    li {
+      a {
+        color: #fff;
+        transition: ease .5s;
+        display: block;
+        padding: 16px 8px;
+      }
+
+      &.active,
+      &:hover {
+        background-color: darken($brand-primary, 5%);
+      }
+    }
+  }
+}
